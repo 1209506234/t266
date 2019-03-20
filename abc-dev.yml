@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: Recieve-File-Service
+    name: SERVICE-PROVIDER
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -14,7 +14,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone:  http://192.168.0.100:8761/eureka/
+      defaultZone:  http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
 
@@ -25,4 +25,4 @@ mybatis:
 
 logging:
   level:
-    com.zb.recieve.dao: debug
+    com.zb.sp.dao: debug
